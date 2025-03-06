@@ -1,51 +1,237 @@
-<p style="margin-bottom:1rem;">
-  <strong>Understanding the Carbon Cycle:</strong> The carbon cycle is a fundamental natural process that circulates carbon through Earth’s atmosphere, biosphere, geosphere, and hydrosphere. As a key element for life, carbon helps regulate Earth’s climate and sustains ecosystems. This continuous movement of carbon occurs between living organisms, the air, soil, oceans, and fossil fuels, playing a crucial role in maintaining environmental balance.
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Chapter 6: The Carbon Cycle</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background: #f8f8f8;
+  }
 
-<div style="display:flex; flex-wrap:wrap; margin-bottom:1rem;">
-  <div style="flex:1 1 300px; padding-right:1rem;">
-    <h2 style="font-size:1.25rem; margin-bottom:0.5rem;">How the Carbon Cycle Works</h2>
-    <ul style="list-style-type:disc; margin-left:1rem;">
-      <li><strong>Photosynthesis:</strong> Plants absorb carbon dioxide (CO₂) from the atmosphere, converting it into oxygen and organic matter through sunlight-driven reactions.</li>
-      <li><strong>Respiration:</strong> Both animals and plants release CO₂ back into the atmosphere through breathing and the breakdown of organic material.</li>
-      <li><strong>Decomposition:</strong> Dead organisms decay, returning carbon to the soil and releasing CO₂.</li>
-      <li><strong>Ocean Absorption:</strong> Oceans function as carbon sinks, absorbing CO₂ from the air and regulating atmospheric levels.</li>
-      <li><strong>Fossil Fuel Formation & Combustion:</strong> Over millions of years, buried carbon transforms into fossil fuels (coal, oil, gas). When burned, these fuels release stored CO₂, contributing to rising atmospheric carbon levels.</li>
-    </ul>
+  /* Main container to simulate a single-page spread */
+  .page {
+    width: 950px; /* Adjust if needed */
+    margin: 0 auto;
+    background: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+  }
+
+  /* Top banner style */
+  .banner {
+    background: #6c8ebf; /* A bluish header color */
+    color: white;
+    padding: 1rem;
+    margin: -1.5rem -2rem 1rem -2rem;
+  }
+  .banner h1 {
+    margin: 0;
+    font-size: 1.75rem;
+  }
+
+  /* Chapter heading next to the big image */
+  .chapter-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .chapter-image {
+    width: 220px; /* Adjust if needed */
+    height: auto;
+    margin-left: 1rem;
+    border: 3px solid #fff;
+  }
+
+  /* Two-column layout */
+  .columns {
+    display: flex;
+    gap: 1rem;
+  }
+  .column-left,
+  .column-right {
+    flex: 1;
+    min-width: 0; /* helps flex items shrink properly */
+  }
+
+  /* Section headings */
+  h2 {
+    color: #5f6062;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  /* Callout boxes, for definitions or special notes */
+  .callout {
+    background: #f4e9b3; /* a light highlight color */
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border-left: 4px solid #c1ab5a;
+    font-size: 0.9rem;
+  }
+  .callout-title {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Images with captions */
+  figure {
+    margin: 1rem 0;
+  }
+  figure img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  figcaption {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.25rem;
+  }
+
+  /* Table for references or short data */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.75rem;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+  }
+  th {
+    background: #eee;
+  }
+
+  /* Footer bar */
+  .footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #e4e4e4;
+    color: #555;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Top banner -->
+  <div class="banner">
+    <div class="chapter-title">
+      <h1>Chapter 6: The Carbon Cycle</h1>
+      <img src="CarbonCycleBanner.png" alt="Carbon Cycle Banner" class="chapter-image" />
+    </div>
   </div>
-  <div style="flex:1 1 300px;">
-    <img src="[CarbonCycleDiagram]" alt="Carbon Cycle Diagram" style="max-width:100%; border:1px solid #ccc; border-radius:8px; margin-bottom:1rem;">
+
+  <!-- Main two-column content -->
+  <div class="columns">
+    <!-- Left column -->
+    <div class="column-left">
+      <p>
+        <strong>Understanding the Carbon Cycle:</strong> The carbon cycle is a fundamental natural process that circulates carbon through Earth’s atmosphere, biosphere, geosphere, and hydrosphere. As a key element for life, carbon helps regulate Earth’s climate and sustains ecosystems.
+      </p>
+      <p>
+        This continuous movement of carbon occurs between living organisms, the air, soil, oceans, and fossil fuels, playing a crucial role in maintaining environmental balance.
+      </p>
+
+      <!-- How It Works -->
+      <h2>How the Carbon Cycle Works</h2>
+      <ul>
+        <li><strong>Photosynthesis:</strong> Plants absorb carbon dioxide (CO₂) from the atmosphere, converting it into oxygen and organic matter.</li>
+        <li><strong>Respiration:</strong> Animals and plants release CO₂ back into the atmosphere through breathing and the breakdown of organic material.</li>
+        <li><strong>Decomposition:</strong> Dead organisms decay, returning carbon to the soil and releasing CO₂.</li>
+        <li><strong>Ocean Absorption:</strong> Oceans function as carbon sinks, absorbing CO₂ from the air.</li>
+        <li><strong>Fossil Fuel Combustion:</strong> Over time, buried carbon forms fossil fuels. When burned, these fuels release CO₂, contributing to rising atmospheric carbon levels.</li>
+      </ul>
+
+      <figure>
+        <img src="CarbonCycleDiagram.png" alt="Carbon Cycle Diagram">
+        <figcaption>Fig 1: A simplified illustration of the carbon cycle.</figcaption>
+      </figure>
+
+      <div class="callout">
+        <div class="callout-title">Fast Fact</div>
+        Soils store three times more carbon than the atmosphere. Healthy soils are essential in slowing climate change.
+      </div>
+    </div>
+
+    <!-- Right column -->
+    <div class="column-right">
+      <h2>The Human Impact</h2>
+      <p>
+        <strong>Burning Fossil Fuels:</strong> Human activities, such as industrial processes and transportation, release excess CO₂, intensifying climate change.
+      </p>
+      <p>
+        <strong>Deforestation:</strong> Removing forests reduces carbon absorption, increasing greenhouse gases in the atmosphere.
+      </p>
+      <p>
+        <strong>Agriculture & Soil Degradation:</strong> Certain farming practices can deplete carbon-rich soil, releasing stored carbon into the air.
+      </p>
+
+      <figure>
+        <img src="CO2Graph.png" alt="CO₂ Levels Over Time">
+        <figcaption>Fig 2: Rising atmospheric CO₂ levels over time.</figcaption>
+      </figure>
+
+      <div class="callout">
+        <div class="callout-title">Tip</div>
+        Support sustainable forestry and regenerative agriculture to keep carbon in the ground.
+      </div>
+
+      <h2>Why It Matters & How We Can Help</h2>
+      <ul>
+        <li><strong>Reduce fossil fuel consumption:</strong> Shift to renewable energy like solar and wind.</li>
+        <li><strong>Reforest and conserve natural carbon sinks:</strong> Forests, wetlands, and grasslands.</li>
+        <li><strong>Invest in carbon capture:</strong> Extract CO₂ from the air for long-term storage or repurposing.</li>
+      </ul>
+
+      <figure>
+        <img src="ForestSinkPhoto.png" alt="Forest as a Carbon Sink">
+        <figcaption>Fig 3: A forest acting as a natural carbon sink.</figcaption>
+      </figure>
+    </div>
+  </div><!-- end columns -->
+
+  <!-- Citations or references -->
+  <h2>Citations</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NASA Climate Change</td>
+        <td><a href="https://climate.nasa.gov">https://climate.nasa.gov</a></td>
+      </tr>
+      <tr>
+        <td>U.S. Geological Survey</td>
+        <td><a href="https://www.usgs.gov">https://www.usgs.gov</a></td>
+      </tr>
+      <tr>
+        <td>National Oceanic and Atmospheric Administration</td>
+        <td><a href="https://www.noaa.gov">https://www.noaa.gov</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Footer Bar with 'page number' style -->
+  <div class="footer">
+    Physical Geography Today • Unit 1: The Carbon Cycle • Page 54
   </div>
 </div>
 
-<h2 style="font-size:1.25rem; margin-bottom:0.5rem;">The Human Impact on the Carbon Cycle</h2>
-<ul style="list-style-type:disc; margin-left:1rem; margin-bottom:1rem;">
-  <li><strong>Burning Fossil Fuels:</strong> Human activities, such as industrial processes and transportation, release excessive CO₂, intensifying climate change.</li>
-  <li><strong>Deforestation:</strong> Cutting down forests reduces carbon absorption, increasing greenhouse gases in the atmosphere.</li>
-  <li><strong>Agriculture &amp; Soil Degradation:</strong> Farming practices can deplete carbon-rich soil, releasing stored carbon into the air and reducing the land’s ability to act as a carbon sink.</li>
-</ul>
-
-<div style="display:flex; flex-wrap:wrap; margin-bottom:1rem;">
-  <div style="flex:1 1 300px; padding-right:1rem;">
-    <img src="[ForestSinkPhoto]" alt="Forest as a Carbon Sink" style="max-width:100%; border:1px solid #ccc; border-radius:8px; margin-bottom:1rem;">
-    <p style="font-size:0.85rem; color:#555; margin-top:-0.5rem;">A forest acting as a natural carbon sink.</p>
-  </div>
-  <div style="flex:1 1 300px;">
-    <img src="[CO2Graph]" alt="CO₂ Levels Over Time" style="max-width:100%; border:1px solid #ccc; border-radius:8px; margin-bottom:1rem;">
-    <p style="font-size:0.85rem; color:#555; margin-top:-0.5rem;">Graph depicting rising CO₂ levels over time.</p>
-  </div>
-</div>
-
-<h2 style="font-size:1.25rem; margin-bottom:0.5rem;">Why It Matters &amp; How We Can Help</h2>
-<ul style="list-style-type:disc; margin-left:1rem; margin-bottom:1rem;">
-  <li><strong>Reduce fossil fuel consumption</strong> by shifting to renewable energy sources like solar and wind power.</li>
-  <li><strong>Reforest and conserve natural carbon sinks</strong> such as forests, wetlands, and grasslands.</li>
-  <li><strong>Invest in carbon capture technologies</strong> that extract CO₂ from the atmosphere for long-term storage or repurposing.</li>
-</ul>
-
-<h2 style="font-size:1.25rem; margin-bottom:0.5rem;">Citations</h2>
-<ul style="list-style-type:disc; margin-left:1rem; margin-bottom:1rem;">
-  <li>NASA Climate Change. "Carbon Cycle and Climate Change." <a href="https://climate.nasa.gov" target="_blank">https://climate.nasa.gov</a></li>
-  <li>U.S. Geological Survey. "The Carbon Cycle." <a href="https://www.usgs.gov" target="_blank">https://www.usgs.gov</a></li>
-  <li>National Oceanic and Atmospheric Administration. "Carbon and the Climate." <a href="https://www.noaa.gov" target="_blank">https://www.noaa.gov</a></li>
-</ul>
+</body>
+</html>
